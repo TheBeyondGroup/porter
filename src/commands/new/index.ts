@@ -29,6 +29,11 @@ export default class New extends Command {
       char: 'p',
       description: "node package manager",
       default: 'yarn'
+    }),
+    "deploy-strategy": Flags.string({
+      char: 'd',
+      description: 'Deployment strategy',
+      default: 'blue-green'
     })
   }
 
