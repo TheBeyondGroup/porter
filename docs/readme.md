@@ -1,9 +1,10 @@
 # Porter
 
-Porter is a storefront framework for Shopify stores. The purpose of the framework
-is to provide an opinionated way to organize and build a Shopify storefront.
+Porter is a storefront framework for Shopify stores. The purpose of the
+framework is to provide an opinionated way to organize and build a Shopify
+storefront.
 
-Porter eases the burden of maintain a Shopify store.
+Porter eases the burden of maintaining a Shopify store.
 
 ## Goals
 
@@ -38,13 +39,13 @@ development in the context of Shopify storefronts.
 
 ## Porter embraces the monorepo
 
-A storefront consists of many parts: theme, apps, checkout ui extensions,
+A storefront consists of many parts: theme, apps, checkout UI extensions,
 functions, and more. We think these parts are best managed when they are in a
-singular repository. It reduces complexity and makes it easier to reason about
-how all the pieces are put together. A storefront can't be a strict monolith,
-but this gets us closer.
+singular repository. It reduces cognitive overhead and makes it easier to
+reason about how all the pieces are put together. A storefront can't be a
+strict monolith, but this gets us closer.
 
 ## Porter is extensible 
 
-Key to Porter is a pack. A pack is collection of code that allows easy reuse, while
-remaining customizable. More to come soon!
+Key to Porter is a pack. A pack is collection of code that allows easy reuse,
+while remaining customizable. More to come soon!
