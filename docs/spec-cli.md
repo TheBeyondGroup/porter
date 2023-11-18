@@ -16,7 +16,7 @@ Flags:
 
 ## `porter migrate --from <path>`
 
-Given the `from` flag, this command moves the contents of the standard Shopify
+Given the `--from` flag, this command moves the contents of the standard Shopify
 theme directories and places them in the Porter structure.
 
 Flags:
