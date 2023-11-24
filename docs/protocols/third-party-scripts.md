@@ -1,6 +1,6 @@
 # Third-Party Scripts
 
-It's common to be asked to third-party scripts to your theme.
+It's common to be asked to add third-party scripts to your theme.
 
 To ensure that you don't need to push code to toggle an integration, use
 a theme setting.
@@ -8,7 +8,7 @@ a theme setting.
 Given the file `snippets/gtm-script.liquid`:
 
 ```liquid
-{% if settings_enable_gtm %}
+{% if settings.enable_gtm %}
 <script>.....</script>
 {% endif %}
 

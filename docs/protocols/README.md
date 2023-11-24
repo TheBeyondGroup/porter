@@ -9,6 +9,6 @@ For now, we simply record our protocols.
 
 ## Themes
 
-| Topic                                      | Description                                                 |
-| ------------------------------------------ | ----------------------------------------------------------- |
-| [Third-Party Scripts](third-party-scripts) | An approach to adding third-party pixels in a resilient way |
+| Topic                                         | Description                                                 |
+| --------------------------------------------- | ----------------------------------------------------------- |
+| [Third-Party Scripts](third-party-scripts.md) | An approach to adding third-party pixels in a resilient way |
