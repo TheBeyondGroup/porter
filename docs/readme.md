@@ -45,7 +45,7 @@ singular repository. It reduces cognitive overhead and makes it easier to
 reason about how all the pieces are put together. A storefront can't be a
 strict monolith, but this gets us closer.
 
-## Porter is extensible 
+## Porter is extensible
 
 Key to Porter is a pack. A pack is collection of code that allows easy reuse,
 while remaining customizable. More to come soon!
