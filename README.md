@@ -7,11 +7,14 @@ development experience for building a Shopify Plus storefront.
 
 Porter:
 
-* embraces Shopify
-* opinionated
-* convention over configuration
-* curated, omakase or chef's choice
-* full stack
+- embraces Shopify
+- opinionated
+- convention over configuration
+- curated, omakase or chef's choice
+- full stack
+
+Dive into the project's [goals](/docs) or its [rationale](/docs/rationale.md) to learn
+more about the project and where it's headed.
 
 ## How can I contribute?
 
