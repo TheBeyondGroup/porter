@@ -1,7 +1,6 @@
 <!-- commands -->
-* [`porter hello PERSON`](#porter-hello-person)
-* [`porter hello world`](#porter-hello-world)
 * [`porter help [COMMANDS]`](#porter-help-commands)
+* [`porter new`](#porter-new)
 * [`porter plugins`](#porter-plugins)
 * [`porter plugins:install PLUGIN...`](#porter-pluginsinstall-plugin)
 * [`porter plugins:inspect PLUGIN...`](#porter-pluginsinspect-plugin)
@@ -11,44 +10,6 @@
 * [`porter plugins:uninstall PLUGIN...`](#porter-pluginsuninstall-plugin-1)
 * [`porter plugins:uninstall PLUGIN...`](#porter-pluginsuninstall-plugin-2)
 * [`porter plugins update`](#porter-plugins-update)
-
-## `porter hello PERSON`
-
-Say hello
-
-```
-USAGE
-  $ porter hello PERSON -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Who is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ oex hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-## `porter hello world`
-
-Say hello world
-
-```
-USAGE
-  $ porter hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ porter hello world
-  hello world! (./src/commands/hello/world.ts)
-```
 
 ## `porter help [COMMANDS]`
 
@@ -69,6 +30,25 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.20/src/commands/help.ts)_
+
+## `porter new`
+
+Create a new Porter project
+
+```
+USAGE
+  $ porter new -n <value> [-b <value>] [-c <value>] [-s <value>] [-p <value>]
+
+FLAGS
+  -b, --build=<value>            [default: vite] Build system for use in the project
+  -c, --css=<value>              [default: tailwind] CSS system
+  -n, --name=<value>             (required) Name of project
+  -p, --package-manager=<value>  [default: yarn] node package manager
+  -s, --scm=<value>              [default: github] Source management system
+
+DESCRIPTION
+  Create a new Porter project
+```
 
 ## `porter plugins`
 
@@ -210,9 +190,9 @@ ARGUMENTS
   PATH  [default: .] path to plugin
 
 FLAGS
-  -h, --help      Show CLI help.
+  -h, --help          Show CLI help.
   -v, --verbose
-  --[no-]install  Install dependencies after linking the plugin.
+      --[no-]install  Install dependencies after linking the plugin.
 
 DESCRIPTION
   Links a plugin into the CLI for development.
