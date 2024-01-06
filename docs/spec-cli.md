@@ -25,6 +25,17 @@ Flags:
 
 - `-f`, `--from` is required
 
+## `porter pack install --repo <pack repo name>`
+
+Given, the `--repo` flag, this command downloads the passed 'org/repo-name'
+from GitHub to `./.porter`.
+
+Flags:
+
+- `-r`, `--repo` is required
+- `-g`, `--global` sets the download directory to `.config/porter` and creates
+a symbolic link to the local `.porter` directory
+
 ## `porter pack carry --pack <pack name>`
 
 Given the `--pack` flag, this command installs all the pack components in the pack.

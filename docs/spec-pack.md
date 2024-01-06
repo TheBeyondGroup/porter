@@ -55,3 +55,8 @@ Proposed structure
 ```
 {command: "log", options: {text: "Hello World"}}
 ```
+
+## Worfklow
+
+To build a pack, use the `porter pack extract` to copy components from the theme
+componenet directories to the local pack store (`./.porter`).
