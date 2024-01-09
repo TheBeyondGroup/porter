@@ -7,8 +7,17 @@
   "bin": {
     "porter": "./bin/run"
   },
-  "files": ["/bin", "/dist", "/npm-shrinkwrap.json", "/oclif.manifest.json"],
-  "keywords": ["Shopify", "theme", "storefront"],
+  "files": [
+    "/bin",
+    "/dist",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "keywords": [
+    "Shopify",
+    "theme",
+    "storefront"
+  ],
   "engines": {
     "node": ">=18.0.0"
   },
@@ -16,14 +25,18 @@
     "bin": "porter",
     "dirname": "porter",
     "commands": "./dist/commands",
-    "plugins": ["@oclif/plugin-help", "@oclif/plugin-plugins"],
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins"
+    ],
     "repositoryPrefix": "<%- repo %>/tree/main/src/<%- commandPath %>",
     "topicSeparator": " "
   },
   "dependencies": {
     "@oclif/core": "^3",
     "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^3.9.1"
+    "@oclif/plugin-plugins": "^3.9.1",
+    "@shopify/cli-kit": "^3.53.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.8.0",
