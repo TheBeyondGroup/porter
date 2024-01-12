@@ -53,7 +53,10 @@ A global `carry.json` defines any additional steps necessary to install all pack
 Proposed structure
 
 ```
-{command: "log", options: {text: "Hello World"}}
+[
+    {command: "log", options: {text: "Hello World"}},
+    {command: "install_package", options: {name: "@shopify/cli-kit"}},
+]
 ```
 
 ## Worfklow

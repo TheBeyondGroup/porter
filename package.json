@@ -33,7 +33,7 @@
     "topicSeparator": " "
   },
   "dependencies": {
-    "@oclif/core": "^3",
+    "@oclif/core": "2.11.7",
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^3.9.1",
     "@shopify/cli-kit": "^3.53.0"
@@ -44,8 +44,10 @@
     "@oclif/prettier-config": "^0.2.1",
     "@oclif/test": "^3",
     "@types/chai": "^4",
+    "@types/diff": "^5.0.9",
     "@types/mocha": "^10",
     "@types/node": "^18",
+    "@types/react": "^18.2.47",
     "chai": "^4",
     "eslint": "^8",
     "eslint-config-oclif": "^5",
