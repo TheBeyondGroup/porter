@@ -2,7 +2,8 @@ import {fileExists, mkdir, removeFile} from '@shopify/cli-kit/node/fs'
 import {downloadGitRepository} from '@shopify/cli-kit/node/git'
 import {cwd} from '@shopify/cli-kit/node/path'
 
-import {GIT_FOLDER, LOCAL_PORTER_DIRECTORY, PROTOCOL_HTTPS} from '../../utilities/constants.js'
+import {GIT_FOLDER, LOCAL_PORTER_DIRECTORY} from '../../utilities/constants.js'
+import {githubUrl} from '../../utilities/github.js'
 import {getLocalDepotPath} from '../../utilities/pack.js'
 
 export async function install(repo: string, global: boolean, protocol: string): Promise<void> {
@@ -32,12 +33,4 @@ async function createLocalPackFolderIfMissing(): Promise<void> {
   if (!packFolderExists) {
     await mkdir(`${cwd()}/${LOCAL_PORTER_DIRECTORY}`)
   }
-}
-
-function githubUrl(protocol: string, repo: string): string {
-  if (protocol === PROTOCOL_HTTPS) {
-    return `https://github.com/${repo}`
-  }
-
-  return `git@github.com:${repo}`
 }
