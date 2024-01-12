@@ -2,10 +2,9 @@ import {fileExists, findPathUp, mkdir, removeFile} from '@shopify/cli-kit/node/f
 import {downloadGitRepository} from '@shopify/cli-kit/node/git'
 import {cwd} from '@shopify/cli-kit/node/path'
 
-export async function installPack(repo: string, global: boolean) {
+export async function install(repo: string, global: boolean) {
   await createLocalPackFolderIfMissing()
   const localPorterDirectory = await getLocalPorterDirectory()
-  console.log(localPorterDirectory)
   const pack = getPackNameFromRepo(repo)
   const localPackDirectory = `${localPorterDirectory}/${pack}`
 

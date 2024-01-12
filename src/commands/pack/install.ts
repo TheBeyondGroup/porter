@@ -1,6 +1,6 @@
 import {Command, Flags} from '@oclif/core'
 
-import {installPack} from '../../services/pack/install.js'
+import {install} from '../../services/pack/install.js'
 
 export default class Install extends Command {
   static description = 'Install pack from GitHub repo'
@@ -21,6 +21,6 @@ export default class Install extends Command {
 
   async run(): Promise<void> {
     const {flags} = await this.parse(Install)
-    await installPack(flags.repo, flags.global)
+    await install(flags.repo, flags.global)
   }
 }
