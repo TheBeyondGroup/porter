@@ -33,7 +33,7 @@ Inside a pack, each component is placed in a folder.
 Without a `carry.json`, when the component is imported, Porter will create a
 folder in `components` matching the component's name and copy in the files.
 
-Files common shared across multiple components can be placed in `shared`
+Files common across multiple components can be placed in `shared`.
 
 ## `carry.json`
 
@@ -61,5 +61,5 @@ Proposed structure
 
 ## Worfklow
 
-To build a pack, use the `porter pack extract` to copy components from the theme
-componenet directories to the local pack store (`./.porter`).
+To build a pack, use `porter pack extract` to copy components from the theme
+component directories to the local pack store (`./.porter`).

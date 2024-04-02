@@ -5,10 +5,12 @@
 Shopify is an amazing platform for starting and growing a business. As much as
 it's an e-commerce company, it is an entrepreneurship company. Its product
 offering provides solutions to common problems merchants encounter. Key to
-running a business on Shopify is a merchant's storefront. While Hydrogen and
-Oxygen exist to provide a headless option, the predominant way to build to a
-Shopify storefront is using Online Store. It is the most tightly integrated
-with the broader Shopify ecosystem of apps and extensions.
+running a business on Shopify is a merchant's storefront. While
+[Hydrogen](https://hydrogen.shopify.dev) and
+[Oxygen](https://shopify.dev/docs/custom-storefronts/hydrogen/deployments/oxygen-runtime)
+exist to provide a headless option, the predominant way to build to a Shopify
+storefront is using Online Store. It is the most tightly integrated with the
+broader Shopify ecosystem of apps and extensions.
 
 Shopify provides a marketplace filled with ready-to-use themes. For many
 merchants just starting out, using one of these themes is good enough to get
@@ -19,9 +21,10 @@ they are modifying what is intended as a finished product.
 In general, unless a pre-built theme adheres to a strict policy of not using
 any build steps, a developer loses access to the source code. The theme code
 found in the admin is the result of the developer's build process. In some
-cases, a theme developer will provide access to the source files like
-Brickspace Lab does with their theme toolkits. Access to the source code for a
-theme is rare, though.
+cases, a theme developer will provide access to the source files for compiled
+parts of a theme like Brickspace Lab does with their 
+[theme toolkits](https://github.com/BrickspaceLab). 
+In general, access to the source code for a theme is rare.
 
 Gaining access to a theme's source code is only one challenge faced when
 building a custom storefront. What makes a storefront is more than a theme.
@@ -78,7 +81,7 @@ to do Shopify development based on our hard earned experience as an agency. It
 establishes conventions on where to put code and how to write it.
 
 Others have tackled this problem before. In fact, Shopify once maintained
-Slate, which was their solution to this problem.
+[Slate](https://github.com/Shopify/slate), which was their solution to this problem.
 
 What Porter contributes is a fresh take on resusability. Full-stack web
 frameworks like Ruby on Rails, Phoenix, and Laravel provide CLIs to scaffold
@@ -86,7 +89,8 @@ features from pre-defined code. Porter provides a similar set of commands for
 Shopify storefront development. Porter also takes the concept of scaffolds
 further by introducing Packs.
 
-A Pack combines a scaffold and component library. It allows you to scaffold sections
-and snippets from a curated set that you or the community write.
+A [Pack](/docs/spec-pack.md) combines a scaffold and component library. It
+allows you to scaffold sections and snippets from a curated set that you or the
+community write.
 
 

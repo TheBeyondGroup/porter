@@ -20,10 +20,12 @@ allowing us to jump to the work that makes a merchant unique.
 
 ## Porter embraces Shopify
 
-Porter embraces Shopify as a platform. There is much to love about Shopify and
-in building storefronts for Shopify we have found that is better to embrace the
+Porter embraces Shopify as a platform. There is much to love about Shopify. In
+building storefronts for Shopify, we have found that is better to embrace the
 Shopify way than fight it. Workarounds are periodically necessary to handle
-limitations with the platform.
+limitations with the platform. Shopify is constantly improving. Workarounds
+should be considered technical debt and removed as soon as there is a
+first-party way to solve the problem.
 
 ## Porter is a CLI
 
@@ -33,7 +35,8 @@ a suite of commands to make storefront development more efficient.
 ## Porter is not a build system
 
 Porter is not a build system. Porter provides configurations for open source
-build tools. vite, webpack, parcel, and others are excellent tools. We see no
+build tools. [vite](https://vitejs.dev), [webpack](https://webpack.js.org),
+[parcel](https://parceljs.org), and others are excellent tools. We see no
 reason to re-invent the wheel, but rather adapt these tools to front-end
 development in the context of Shopify storefronts.
 
@@ -48,4 +51,4 @@ strict monolith, but this gets us closer.
 ## Porter is extensible
 
 Key to Porter is a pack. A pack is collection of code that allows easy reuse,
-while remaining customizable. More to come soon!
+while remaining customizable.
